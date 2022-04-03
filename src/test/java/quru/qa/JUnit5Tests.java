@@ -1,9 +1,11 @@
 package quru.qa;
 
-import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.*;
+import static com.codeborne.selenide.Selenide.closeWindow;
+import static com.codeborne.selenide.Selenide.open;
 
-public class SimpleTest {
+
+public class JUnit5Tests {
 
     @BeforeAll
     static void initDB() {
@@ -13,13 +15,13 @@ public class SimpleTest {
     @BeforeEach
     void openWindow() {
         System.out.println("### BeforeEach");
-        Selenide.open("https://ya.ru");
+        open("https://ya.ru");
     }
 
     @AfterEach
     void close() {
         System.out.println("### AfterEach");
-        Selenide.closeWindow();
+        closeWindow();
     }
 
     @AfterAll
@@ -29,15 +31,21 @@ public class SimpleTest {
 
     @Test
     void assertTest1() {
-
-        //...1
-
+        System.out.println("###     test 1");
     }
 
     @Test
     void assertTest2() {
+        System.out.println("###     test 2");
+    }
 
-        //...2
+    @Test
+    void assertTest3() {
+        System.out.println("###     test 3");
+    }
 
+    @Test
+    void assertTest4() {
+        System.out.println("###     test 4");
     }
 }
