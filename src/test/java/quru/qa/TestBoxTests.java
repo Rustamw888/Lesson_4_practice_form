@@ -1,6 +1,5 @@
 package quru.qa;
 
-import net.jodah.failsafe.internal.util.Assert;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -14,7 +13,7 @@ public class TestBoxTests {
 
     @BeforeAll
     static void setUp() {
-//        holdBrowserOpen = true;
+        holdBrowserOpen = true;
         baseUrl = "https://demoqa.com";
         browserSize = "1920x1080";
     }

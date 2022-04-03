@@ -4,7 +4,6 @@ import org.junit.jupiter.api.*;
 import static com.codeborne.selenide.Selenide.closeWindow;
 import static com.codeborne.selenide.Selenide.open;
 
-
 public class JUnit5Tests {
 
     @BeforeAll
