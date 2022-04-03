@@ -1,4 +1,4 @@
-package quru.qa;
+package quru.qa.tests;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;

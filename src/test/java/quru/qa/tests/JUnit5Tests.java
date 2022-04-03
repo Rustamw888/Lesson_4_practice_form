@@ -1,4 +1,4 @@
-package quru.qa;
+package quru.qa.tests;
 
 import org.junit.jupiter.api.*;
 import static com.codeborne.selenide.Selenide.closeWindow;
